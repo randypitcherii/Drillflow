@@ -39,7 +39,7 @@ import com.hashmapinc.tempus.witsml.server.api.model.WMLS_GetCapResponse;
 import com.hashmapinc.tempus.witsml.server.api.model.WMLS_GetFromStoreResponse;
 import com.hashmapinc.tempus.witsml.server.api.model.WMLS_WellObjectToObj;
 import com.hashmapinc.tempus.witsml.server.api.model.cap.ServerCap;
-import com.hashmapinc.tempus.witsml.util.WitsmlPojoToJsonConvertor;
+import com.hashmapinc.tempus.witsml.server.util.WitsmUtilConvertor;
 import com.hashmapinc.tempus.witsml.valve.IValve;
 import com.hashmapinc.tempus.witsml.valve.ValveFactory;
 import com.hashmapinc.tempus.witsml.valve.dot.DotTranslator;
@@ -57,7 +57,7 @@ public class StoreImpl implements IStore {
 	private String valveName;
 
 	@Autowired
-	private WitsmlPojoToJsonConvertor witsmlPojoToJsonConvertor;
+	private WitsmUtilConvertor witsmlPojoToJsonConvertor;
 
 	@Autowired
 	private DotTranslator dotTranslator;
